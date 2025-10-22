@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@1/dist/ml5.js"></script>
+    <script>
+/* Web‑Serial helper (tiny) */
+let port, writer;
+async function connectSerial() {
+  try {
+    // Ask the user which serial port they want.
+    port = await navigator.serial.requestPort();
+    await port.open({ baudRate: 9600 });
+    writer = port.writable.getWriter();
+    console.log('✅ Serial connected');
+  } catch (err) {
+    console.error('Failed to open serial port:', err);
+  }
+}
+function sendSerialChar(c) {
+  if (!writer) return;  // not yet connected
+  const data = new Uint8Array([c.charCodeAt(0)]);
+  writer.write(data);
+}
+</script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+    </main>
+    <button onclick="connectSerial()"
+        style="position:absolute;top:10px;left:10px;z-index:10">
+  🔗 Connect Arduino
+</button>
+    <script src="learn.js"></script>
+<!--     <script src="Cloud.js"></script>
+    <script src="RainParticle.js"></script>
+    <script src="VaporParticle.js"></script> -->
+  </body>
+</html>
