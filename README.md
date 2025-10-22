@@ -7,7 +7,7 @@ This project is a fun and interactive learning tool designed especially for youn
 
 ## 🖼️ DEMO
 
-![Water Cycle Demo](moutain.png)
+![Water Cycle Demo](Demo.png)
 
 👉 **[Try it Online in p5.js Editor](https://editor.p5js.org/Bhanupal/sketches/st5agwuvM)**
 
