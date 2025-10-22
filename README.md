@@ -7,7 +7,7 @@ This project is a fun and interactive learning tool designed especially for youn
 
 ## 🖼️ DEMO
 
-![Water Cycle Demo](mountain.png)
+![Water Cycle Demo](moutain.png)
 
 👉 **[Try it Online in p5.js Editor](https://editor.p5js.org/Bhanupal/sketches/st5agwuvM)**
 
@@ -20,7 +20,6 @@ This project is a fun and interactive learning tool designed especially for youn
 🌧️ **Rain starts** when clouds collide  
 ⚡ **Lightning and thunder effects** with visuals and sound  
 💡 **Arduino Integration:** LEDs, fan, and sprinkler simulate real-world weather  
-🐄 **Animated cows** walk across the screen for a fun touch  
 🎵 **Soothing background music** and nature sounds  
 
 ---
@@ -112,5 +111,4 @@ This simulation combines science, visuals, sound, real-world hardware, and motio
 🙌 Made With Love
 
 Designed and developed by Bhanu Pal ❤️
-Based on collaborative work and inspiration from Gurvender Singh.
 Built for learning, creativity, and curious young minds 🌈
